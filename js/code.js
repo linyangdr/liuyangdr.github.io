@@ -21,13 +21,13 @@ html{
 我还真不知道。
 不如我们看几张我在天津这边拍的照片吧？*/
 <br>
-<img src="ci.JPG" style="width: 300px;height: 200px">
+<img src="ci.jpg" style="width: 300px;height: 200px">
 /* 这是天津著名的瓷房子，整个房子都是瓷的。*/
 <br>
-<img src="国民饭店.JPG" style="width: 300px;height: 200px">
+<img src="国民饭店.jpg" style="width: 300px;height: 200px">
 /*这是天津的国民饭店，具体我也不清楚。/*
 <br>
-<img src="zha.JPG" style="width: 300px;height: 200px">
+<img src="zha.jpg" style="width: 300px;height: 200px">
 /*当地特色耳朵眼炸糕，但我吃起来就是加大版的芝麻球。*/
 `;
 })()
