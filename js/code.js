@@ -21,7 +21,7 @@ html{
 我还真不知道。
 不如我们看几张我在天津这边拍的照片吧？*/
 <br>
-<img src="ci.jpg" style="width: 300px;height: 200px">
+<img src="sheng.jpg" style="width: 300px;height: 200px">
 /* 这是天津著名的瓷房子，整个房子都是瓷的。*/
 <br>
 <img src="国民饭店.jpg" style="width: 300px;height: 200px">
