@@ -33,14 +33,14 @@ html{
      position:fixed;
      left:0;
      width: 40%;
-     height: 80%;
+     height: 60%
      margin-left: 35px;
     }	
 #paper{
     position: relative;
     display: inline-block;
-    width: 45%;
-    height: 80%;
+    width: 50%;
+    height: 70%;
     background: linear-gradient(to bottom, #A7FEF1, #20EEF3); 
     padding: 20px;
     box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.8);
