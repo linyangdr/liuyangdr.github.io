@@ -1,6 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.token.selector {
+    color: black;
+}
+
+.token.property {
+    color: black;
+}
+
+.token.punctuation {
+    color: black;
+}
+
+#code {
+    overflow: auto;
+}
+#code {
+    overflow: auto;
+}
 #box{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+@keyframes Myfirst {
+    0%, 100% {
+        box-shadow: 0 0 4px 3px rgba(31, 12, 255, 0), 0 0 0px 0px #AD5CF9, 0 0 0px 0px rgba(26, 255, 179, 0);
+    }
+    25% {
+        box-shadow: 0 0 4px 3px #982FF9, 0 0 6px 5px rgba(31, 12, 255, 0.62), 0 0 6px 7px #982FF9;
+    }
+    50% {
+        box-shadow: 0 0 4px 3px rgba(26, 255, 179, 0), 0 0 0px 0px #AD5CF9, 0 0 0px 0px rgba(26, 255, 179, 0);
+    }
+    75% {
+        box-shadow: 0 0 4px 3px #A650F8, 0 0 6px 5px #AD5CF9, 0 0 6px 7px #A650F8;
+    }
+}
+@keyframes myfirst1
+{
+    0%   {background:linear-gradient(to bottom, #A7FEF1, #20EEF3);  left:0px; top:0px;}
+    25%  {background:#F9FEA7; left:200px; top:0px;}
+    50%  {background:#A7D9FE; left:200px; top:200px;}
+    75%  {background:#A7FEC0; left:0px; top:200px;}
+    100% {background:linear-gradient(to bottom, #A7FEF1, #20EEF3);  left:0px; top:0px;}
+}
+
