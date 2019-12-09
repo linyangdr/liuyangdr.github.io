@@ -14,8 +14,8 @@
                  <div class="wang"><a href="../index.html" style="text-decoration: none;color: #FEFCFF;font-size: 23px;font-family: 新宋体">网易云音乐</a> </div>
              </div>
              <div class="top_content">
-                 <div class="top_text"><a href="" style="text-decoration: none;color: #CCCCCC">发现音乐</a> </div>
-                 <div class="top_text"><a href="" style="text-decoration: none;color: #CCCCCC">我的音乐</a></div>
+                 <div class="top_text"><a href="../index.html" style="text-decoration: none;color: #CCCCCC">发现音乐</a> </div>
+                 <div class="top_text"><a href="../我的音乐.html" style="text-decoration: none;color: #CCCCCC">我的音乐</a></div>
                  <div class="top_text"><a href="" style="text-decoration: none;color: #CCCCCC">音乐人</a>
                      <div class="dropdown-content">
                          <a href="">中国歌手</a>
@@ -32,12 +32,46 @@
              </div>
          </div>
      </div>
-     <div class="bottom"style="background-image: url(picture/Taylor2.jpg)"></div>
+     <div class="bottom"style="background-image: url(picture/Taylor2.jpg)">
+         <img src="../picture/Taylor.jpg" width="250px"height="250px"style="box-shadow:#F8F8F8 0 2px 10px 1px ;padding: 10px ">
+         <div class="middle_content">
+             <div class="bottom_content1" style="padding-left: 8px">Taylor Swift : 霉霉</div>
+             <div class="bottom_content1"><a href=""style="text-decoration: none;color:#F8F8F8;"title="点击聆听《Blank Space》">《Blank Space》</a><a href=""style="text-decoration: none;color:#F8F8F8;"title="点击聆听《Welcome to NewYork》">《Welcome to NewYork》</a> </div>
+             <div class="bottom_content1"><a href=""style="text-decoration: none;color:#F8F8F8;"title="点击聆听《Style》">《Style》</a><a href=""style="text-decoration: none;color:#F8F8F8;"title="点击聆听《Out of the Woods》">《Out of the Woods》</a> </div>
+             <div class="bottom_content1"><a href=""style="text-decoration: none;color:#F8F8F8;"title="点击聆听《Shake It Off》">《Shake It Off》</a><a href=""style="text-decoration: none;color:#F8F8F8;"title="点击聆听《Wildest Dreams》">《Wildest Dreams》</a> </div>
+             <div class="bottom_content1"><a href=""style="text-decoration: none;color:#F8F8F8;"title="点击聆听《Clean》">《Clean》</a><a href=""style="text-decoration: none;color:#F8F8F8;"title="点击聆听《You Are In Love》">《You Are In Love》</a> </div>
+             <div class="bottom_content1"style="padding-left: 10px">那么就来收听这个专辑里最为出名的一首吧!</div>
+             <div class="bottom_content1"><input type="button"value="点击收听"style=" border: none; color: white;background-color: #999999;margin-left: 10px" onclick="back1()"></div>
+             <div class="Taylor_video">
+             <audio controls id="Taylor">
+                 <source src="video/Taylor%20Swift-Blank%20Space.mp3">
+             </audio>
+             </div>
+         </div>
+     </div>
 </body>
 <style>
     a:link    {color:#71777C;}
     a:visited {color:#71777C;}
     a:hover   {color:black;}
     a:active  {color:black;}
+    .middle_content{
+        padding: 20px;
+        width: 400px;
+        height: 330px;
+        color: #F8F8F8;
+        font-size: 18px;
+    }
+    .Taylor_video{
+        padding: 10px;
+    }
+    #Taylor{
+        display: none;
+    }
 </style>
+<script>
+    function back1() {
+        document.getElementById("Taylor").style.display = "block"
+    }
+</script>
 </html>
