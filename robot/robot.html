@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>聊天机器人</title>
+<style>
+.article{
+    margin: 0 auto;
+    padding: 20px;
+    width: 500px;
+    height:600px;
+    background-color:white;
+    position: relative;top: 20px;
+    border-radius: 10px;
+    border: none;
+    opacity: 0.8;
+    background-image: url(6afbb51f96dbcc3cd1dfe20914344629.jpg);
+    
+}
+    .me{
+        margin: 0 auto;
+        padding: 20px;
+        display: inline;
+    }
+.next{
+    margin: 0 auto;
+    
+    }
+.first{
+        display: flex;
+    }
+
+.second{
+    display: none;
+    
+}
+.third{
+    display: none;
+}
+.fourth{
+    display: none;
+}
+.fifth{
+    text-align: none;
+}
+    
+</style>
+</head>
+<body>
+<div class="article">
+    <div class="first">
+        <div class="img">
+            <img src="机器人.png" style="width: 50px;height: 50px;">
+            
+        </div>
+        <div class="input">
+            <input type="text"  style=" border-radius: 10px;border-width: 1px;height: 20px;width: 200px; position: relative;top:55px;right: 53px;" placeholder="&nbsp;&nbsp;你好啊!">
+        </div>
+
+<div class="me">
+    <div class="img">
+        <img src="头像%20男孩%20(1).png" style="width: 50px;height: 50px;position: relative;left: 180px;top: 40px;">
+    </div>
+    <div class="input">
+        <input type="text" id="tex_content" style="width: 200px;height: 20px;border-radius: 10px;border-width:1px;position: relative;top: 40px;right: 30px;">
+        <input type="button" style="border: none; color: white;background-color: #4CAF50;position: relative;top: 17px;left: 175px;" onclick="Answer4()" value="发送消息" id="btn" >
+    </div>
+</div>
+    </div>
+
+<div class="second">
+<div class="next">
+        <div class="img">
+            <img src="机器人.png" style="width: 50px;height: 50px;position: relative;bottom: 10px;">
+        </div>
+        <div class="input">
+            <input type="text" id="reply" style=" border-radius: 10px;border-width: 1px;height: 20px;width: 200px;position: relative;bottom: 10px;color:#8E8E8E">
+        </div>
+</div>
+
+<div class="img">
+        <img src="头像%20男孩%20(1).png" style="width: 50px;height: 50px;position: relative;bottom: 10px;left: 455px;">
+    </div>
+    <div class="input">
+        <input type="text" id="tex_content1" style="width: 200px;height: 20px;border-radius: 10px;border-width:1px;position: relative;bottom: 10px;left: 245px;">
+        <input type="button" style="border: none; color: white;background-color: #4CAF50;position: relative;bottom: 10px;left: 245px;" onclick="Answer1()" value="发送消息" >
+    </div>
+    </div>
+
+
+    <div class="third">
+        <div class="next">
+                <div class="img">
+                    <img src="机器人.png" style="width: 50px;height: 50px;position: relative;bottom: 15px;">
+                </div>
+                <div class="input">
+                    <input type="text" id="reply1" style=" border-radius: 10px;border-width: 1px;height: 20px;width: 200px;position: relative;bottom: 15px;color:#8E8E8E" >
+                    
+                </div>
+        </div>
+        
+        <div class="img">
+                <img src="头像%20男孩%20(1).png" style="width: 50px;height: 50px;position: relative;bottom: 10px;left: 455px;">
+            </div>
+            <div class="input">
+                <input type="text" id="tex_content2" style="width: 200px;height: 20px;border-radius: 10px;border-width:1px;position: relative;bottom: 10px;left: 245px;">
+                <input type="button" style="border: none; color: white;background-color: #4CAF50;position: relative;bottom: 10px;left: 245px;" onclick="Answer2()" value="发送消息" >
+            </div>
+            </div>
+
+            <div class="fourth">
+                <div class="next">
+                        <div class="img">
+                            <img src="机器人.png" style="width: 50px;height: 50px;position: relative;bottom: 15px;">
+                        </div>
+                        <div class="input">
+                            <input type="text" id="reply2" style=" border-radius: 10px;border-width: 1px;height: 20px;width: 200px;position: relative;bottom: 15px;color:#8E8E8E" >
+                        </div>
+                </div>
+                
+                <div class="img">
+                        <img src="头像%20男孩%20(1).png" style="width: 50px;height: 50px;position: relative;bottom: 10px;left: 455px;">
+                    </div>
+                    <div class="input">
+                        <input type="text" id="tex_content3" style="width: 200px;height: 20px;border-radius: 10px;border-width:1px;position: relative;bottom: 10px;left: 245px;">
+                        <input type="button" style="border: none; color: white;background-color: #4CAF50;position: relative;bottom: 10px;left: 245px;" onclick="Answer3()" value="发送消息" >
+                    </div>
+                    </div>
+
+                    <div class="fifth" style="text-align: center;">
+                        <a href="https://www.bilibili.com/" target=" _blank">
+                        <img src="CD25A7BB8DAD0BCA83B27E9555BF9D13.jpg" style="width: 90px;height: 90px;position: fixed;bottom: 300px;left: 30px;">
+                        </a>
+                    </div>
+                    <p id="demo" style="position: relative;right:400px;top: 180px;"></p>
+                    </div>
+                   
+</body>
+<script>
+    var a  = ["你喜欢吃什么？","你喜欢喝什么?","你喜欢谁?","你喜欢干什么?","你喜欢玩什么?","你喜欢打游戏么?","我可以做你的朋友嘛？","你有什么爱好啊？","你的QQ号是多少啊?"];
+    var f = 0;
+    function Answer4(){ 
+        var m = Math.floor(Math.random()*9);
+     document.getElementById('reply').value = a[m];
+ 
+
+             var text =document.getElementById("tex_content")
+             var val = text.value;
+             if(val == ""){
+                 alert("不能为空!")
+             }  else {
+                 
+             alert('发送成功');
+     let ele = document.getElementsByClassName('second');
+        ele[0].style.display = 'block';
+             }
+
+         }
+    
+
+
+
+    function Answer1(){
+        var m = Math.floor(Math.random()*9);
+        document.getElementById('reply1').value = a[m];
+ 
+
+        
+             var text1 =document.getElementById("tex_content1")
+             var val = text1.value;
+             if(val == ""){
+                 alert("不能为空!")
+             }  else {
+                 
+             alert('发送成功');
+     let ele = document.getElementsByClassName('third');
+        ele[0].style.display = 'block';
+             }
+    }
+    
+    function Answer2(){ 
+        var m = Math.floor(Math.random()*9);
+     document.getElementById('reply2').value = a[m];
+ 
+
+             var text2 =document.getElementById("tex_content2")
+             var val = text2.value;
+             if(val == ""){
+                 alert("不能为空!")
+             }  else {
+                 
+             alert('发送成功');
+     let ele = document.getElementsByClassName('fourth');
+        ele[0].style.display = 'block';
+             }
+    }
+
+
+
+    function Answer3(){
+        var text3 =document.getElementById("tex_content3")
+             var val = text3.value;
+             if(val == ""){
+                 alert("不能为空!")
+             }  else {
+                 
+             alert("感谢您的访问！");
+     
+             }
+     
+    }
+
+    
+    
+
+</script>
+</html>
