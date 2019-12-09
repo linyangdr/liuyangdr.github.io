@@ -14,8 +14,8 @@
                  <div class="wang"><a href="../index.html" style="text-decoration: none;color: #FEFCFF;font-size: 23px;font-family: 新宋体">网易云音乐</a> </div>
              </div>
              <div class="top_content">
-                 <div class="top_text"><a href="" style="text-decoration: none;color: #CCCCCC">发现音乐</a> </div>
-                 <div class="top_text"><a href="" style="text-decoration: none;color: #CCCCCC">我的音乐</a></div>
+                 <div class="top_text"><a href="../index.html" style="text-decoration: none;color: #CCCCCC">发现音乐</a> </div>
+                 <div class="top_text"><a href="../我的音乐.html" style="text-decoration: none;color: #CCCCCC">我的音乐</a></div>
                  <div class="top_text"><a href="" style="text-decoration: none;color: #CCCCCC">音乐人</a>
                      <div class="dropdown-content">
                          <a href="">中国歌手</a>
@@ -32,12 +32,43 @@
              </div>
          </div>
      </div>
-     <div class="bottom"style="background-image: url(picture/Jay.png)"></div>
+     <div class="bottom"style="background-image: url(picture/Jay.png)">
+         <div class="Jay_content">
+             <img src="picture/zhou.jpg"style="box-shadow:#999999 0 2px 10px 1px ;padding: 10px ">
+             <div class="Jay_text">说好不哭</div>
+             <div class="Jay_text">发布不到一个小时，QQ音乐、酷我音乐、酷狗音乐三大平台总销量突破200万张。上线不到两小时，单曲数字版销售总额突破一千万。上线100分钟后，销量达成“双钻石唱片”认证，同时冲到了年榜第八。</div>
+             <div class="Jay_text">那么接下来就请收听这首歌曲吧！</div>
+             <div class="Jay_text"><input type="button"value="点击收听"style=" border: none; color: white;background-color: #999999;"id="show1" onclick="back()"></div>
+             <div class="mp3">
+                 <audio  loop="loop" controls id="mp3" preload="auto"
+                         src="video/周杰伦%20-%20说好不哭.mp3">
+                 </audio>
+             </div>
+         </div>
+     </div>
 </body>
 <style>
     a:link    {color:#71777C;}
     a:visited {color:#71777C;}
     a:hover   {color:black;}
     a:active  {color:black;}
+    .Jay_content {
+        width: 350px;
+        height: 600px;
+        padding: 20px;
+    }
+    .Jay_text{
+        padding: 10px;
+        font-size: 15px;
+        color: #999999;
+    }
+    #mp3{
+        display: none;
+    }
 </style>
+<script>
+    function back() {
+        document.getElementById("mp3").style.display = "block";
+    }
+</script>
 </html>
