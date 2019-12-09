@@ -14,8 +14,8 @@
                  <div class="wang"><a href="../index.html" style="text-decoration: none;color: #FEFCFF;font-size: 23px;font-family: 新宋体">网易云音乐</a> </div>
              </div>
              <div class="top_content">
-                 <div class="top_text"><a href="" style="text-decoration: none;color: #CCCCCC">发现音乐</a> </div>
-                 <div class="top_text"><a href="" style="text-decoration: none;color: #CCCCCC">我的音乐</a></div>
+                 <div class="top_text"><a href="../index.html" style="text-decoration: none;color: #CCCCCC">发现音乐</a> </div>
+                 <div class="top_text"><a href="../我的音乐.html" style="text-decoration: none;color: #CCCCCC">我的音乐</a></div>
                  <div class="top_text"><a href="" style="text-decoration: none;color: #CCCCCC">音乐人</a>
                      <div class="dropdown-content">
                          <a href="">中国歌手</a>
@@ -32,7 +32,18 @@
              </div>
          </div>
      </div>
-     <div class="bottom"style="background-image: url(picture/JJ.jpeg)"></div>
+     <div class="bottom"style="background-image: url(picture/JJ.jpeg)">
+         <div class="JJ_content">
+           <img src="picture/JJ.jpg"width="200"height="200" style="box-shadow:black 0 2px 10px 1px ;padding: 10px">
+             <div class="JJ_text">新地球</div>
+             <div class="JJ_text">该专辑发行5天即空降台湾五大金榜华语榜2014年度销售冠军，2015年1月荣登美国BillBoard世界专辑排行榜前10。<br>其中最耳熟能详的歌曲当属《可惜没如果》，那么不妨来欣赏一下！<br><br>
+                 <input type="button"value="点击收听"style=" border: none; color: white;background-color: #4CAF50;"id="show1" onclick="back()"><br><br>
+                 <audio  loop="loop" controls id="mp3"
+                         src="video/林俊杰+-+可惜没如果.mp3">
+                 </audio>
+             </div>
+         </div>
+     </div>
 
 
 </body>
@@ -41,5 +52,25 @@
     a:visited {color:#71777C;}
     a:hover   {color:black;}
     a:active  {color:black;}
+    .JJ_content{
+        width: 600px;
+        height: 260px;
+        padding: 20px;
+        display: flex;
+        padding-right: 50px;
+    }
+    .JJ_text{
+        padding:10px;
+        font-size: 17px;
+        color: #282828;
+    }
+    #mp3{
+        display: none;
+    }
 </style>
+<script>
+    function back() {
+        document.getElementById("mp3").style.display = "block";
+    }
+</script>
 </html>
