@@ -161,7 +161,7 @@ display: flex;
     display: flex;
 }
 .bottom_left_right{
-    color: #282828;
+    color:#282828 ;
     padding-top: 10px;
     padding-left: 10px;
 }
@@ -178,4 +178,9 @@ display: flex;
 }
 .bottom_left_right1 a:hover{
     color: #FEFCFF;
+}
+.form{
+    color: #F8F8F8;
+    padding: 0px;
+    margin-top: 2px;
 }
